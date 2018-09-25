@@ -11,7 +11,59 @@ import {
 } from './api';
 
 const styles = StyleSheet.create({
-
+    card: {
+        backgroundColor: 'green',
+        flex: 1,
+        padding: 10,
+        paddingTop: 10,
+        paddingBottom: 20,
+        margin: 10,
+        marginTop: 5,
+        marginBottom:5,
+    },
+    cardHeader: {
+        flex:1,
+        flexDirection: 'row',
+    },
+    date: {
+        fontWeight: '200',
+        fontSize: 15,
+        color: 'white',
+        width: '30%',
+        textAlign: 'right',
+    },
+    title: {
+        fontSize: 15,
+        fontWeight: '300',
+        marginLeft: 7,
+        textAlign: 'left',
+        color: 'white',
+    },
+    counterContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingLeft: '5%',
+        paddingRight: '5%',
+        borderWidth: 1,
+        borderColor: 'darkgreen'
+    },
+    counter: {
+        width: '25%',
+        flex: 1,
+        backgroundColor: 'green'
+    },
+    counterText: {
+        fontSize: 40,
+        textAlign: 'center'
+    },
+    counterLabel: {
+        fontSize: 13,
+        fontWeight: '100',
+        color: 'white',
+        textAlign: 'center',
+        paddingTop: 0,
+    }
 });
 
 export default function EventCard({event}) {
