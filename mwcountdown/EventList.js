@@ -28,12 +28,22 @@ class EventList extends Component {
         this.setState({events});
     }
 
+    handleAddEvent = () => {
+        this.props.navigation.navigate('form');
+    }
+
     render() {
-        return [
+        return [                
             <FlatList
+                key="flatlist"
                 data={this.state.events}
                 renderItem={({ item }) => <EventCard event={item}/>}
                 keyExtractor={item => item.id}
+            />,
+            <ActionButton
+            key="fab"
+            onPress={this.handleAddEvent}
+            buttonColor="green"
             />
         ];
     }
