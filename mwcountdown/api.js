@@ -1,5 +1,5 @@
-import moment from 'moment';
-import uuid from 'uuid';
+//import moment from 'moment';
+//import uuid from 'uuid';
 
 /* this code does not work
 import Expo from 'expo';
